@@ -1,0 +1,77 @@
+body {
+	margin: 0;
+}
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url('material-icons/MaterialIcons-Regular.eot'); /* For IE6-8 */
+	src: local('Material Icons'),
+	local('MaterialIcons-Regular'),
+	url('material-icons/MaterialIcons-Regular.woff2') format('woff2'),
+	url('material-icons/MaterialIcons-Regular.woff') format('woff'),
+	url('material-icons/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+}
+
+#root {
+	padding: 10px;
+	font-size: 16px;
+}
+
+.folder-slide {
+	padding-left: 32px;
+	display: none;
+}
+
+.folder.active > .folder-slide {
+	display: block;
+}
+
+.open-folder,
+.file {
+	cursor: pointer;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 3px;
+}
+ul{
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 22px;
+    font-weight: 100;
+  }
+  .active {
+    display: block;
+  }
+  i{
+    vertical-align: text-bottom;
+    padding-right: 3px;
+  }
+  span:hover{
+    background-color: #EFEFEF;
+  }
+  .light:hover{
+    background-color: #EFEFEF;
+  }
+  .folder{
+   color: #EDB738;
+  }
+  .file{
+    color: #BBBBBB;
+  }
